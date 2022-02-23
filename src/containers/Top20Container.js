@@ -3,6 +3,7 @@ import "../css/Top20Container.css"
 
 
 import SongList from "../components/SongList";
+import SongPictures from "../components/SongPictures";
 
 
 const Top20Container = () => {
@@ -22,9 +23,10 @@ const Top20Container = () => {
 
 
     return (
-        <>
+        <div className="pictures-and-songs-container">
+            <SongPictures songList={songList} />
             <SongList songList={songList}/>
-        </>
+        </div>
     );
 }
 
