@@ -1,9 +1,8 @@
+import "../css/SongItem.css"
 
+const SongItem = ({index, song}) => {
 
-const SongItem =  () => {
-    return ( 
-        <h4>I am a Song Item component</h4>
-     );
+    return <li>Number {index}. {song}</li>
 }
 
 export default SongItem;
